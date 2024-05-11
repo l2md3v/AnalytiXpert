@@ -1,0 +1,50 @@
+.decorative-div {
+    width: 50px;
+    background-color: red;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+}
+
+.decorativeDiv {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.waveAbove {
+    margin-bottom: auto;
+    width: 100%;
+    transform: scaleX(0.5);
+}
+
+.wave {
+    margin-top: auto;
+    color: red;
+    width: 100%;
+}
+
+.image-position {
+    position: relative;
+    width: 50px;
+    right: -104px;
+    margin-block: 10px;
+}
+
+@media(max-width: 600px) {
+    .decorative-div {
+        display: none;
+    }
+}
+
+.image-logo {
+    filter:hue-rotate(5);
+    filter: invert(16%) sepia(5%) saturate(6933%) hue-rotate(195deg) brightness(86%) contrast(107%);
+    width: 100px;
+    margin-bottom: -20px;
+}
